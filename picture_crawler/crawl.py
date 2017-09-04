@@ -3,16 +3,12 @@
 import re
 import urllib
 
-import hbase_mar
-import mysql_mar
-import downloader
+from crawl_subclass import crawler_subclass
 
 
-class crawler:
+class crawler(crawler_subclass):
     def __init__(self):
-        self.download = downloader.Downloader()
-        self.db_manager = mysql_mar.DbManager()
-        self.hbase_manager = hbase_mar.HbaseClient()
+        super(crawler, self).__init__()
 
     def crawl_page(self):
         judge = True
@@ -44,7 +40,8 @@ class crawler:
             if repeat >= 10:
                 break
             if not judge_page_exist:
-                break
+                page_number = 1
+                continue
             page_number += 1
 
     def crawl_image(self):
