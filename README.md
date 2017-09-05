@@ -1,5 +1,4 @@
-# 抽取信息网站 www.qiushibaike.com
-# 抽取内容 图片
-# 链接等保存到mysql中
-# 图片保存到hbase
+信息网站: www.qiushibaike.com
+内容: 图片
+数据库:MySQL Hbase
 修改日期 2017-09-05
