@@ -1,4 +1,4 @@
-总用量 16
+
 drwxr-xr-x 4 junyang junyang 4096 10月 11 15:32 .
 drwxr-xr-x 4 junyang junyang 4096 9月  12 16:44 ..
 -rw-r--r-- 1 junyang junyang    0 10月 11 15:32 a.txt
